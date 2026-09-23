@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e9e8e2"><meta name="description" content="Xartwellixa. Не всё, что написано здесь, я собирался кому-то показывать.">
+<title>xartwellixa — со мной всё хорошо</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e9e8e2'/%3E%3Cpath d='M7 8L25 24M24 7L8 25' stroke='%237e201f' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<img class="blood-stain" src="dried-blood.png" alt="" aria-hidden="true" draggable="false">
+<div class="grain" aria-hidden="true"></div>
+<div id="entrance" class="entrance">
+  <span class="entry-top">XARTWELLIXA / НЕОТПРАВЛЕННОЕ</span>
+  <div class="entry-center"><p class="entry-small">я не помню, чтобы звала тебя.</p><h2>но раз уж<br>ты <em>здесь.</em></h2><button id="enter" class="enter-button">открыть глаза <span>↗</span></button><span class="entry-audio">дальше будет звук.</span></div>
+  <span class="entry-bottom">пожалуйста, не делай вид, что ничего не видел.</span>
+</div>
+<div id="site" inert>
+<header><a href="#home" class="wordmark">x<span>×</span>w.</a><span class="header-text">ЭТО НЕ ДНЕВНИК. <s>ЭТО ПРОСТО САЙТ.</s></span><span class="page-number">стр. 01 / ?</span></header>
+<main id="home">
+  <div class="margin-rule" aria-hidden="true"></div>
+  <section class="intro" aria-labelledby="name">
+    <div class="record"><span class="record-cross">+</span> ЛИЧНОЕ ДЕЛО № 000 <span class="record-status">не завершено</span></div>
+    <div class="name-line"><h1 id="name">xartwellixa</h1><span class="name-mark" aria-hidden="true">*</span></div>
+    <div class="subtitle"><span>@Xartwellixa</span><span>присутствует. предположительно.</span></div>
+    <div class="confession"><p>со мной всё<br><span class="crossed">хорошо.</span></p><span class="handwritten correction">не спрашивай ещё раз.</span></div>
+    <div class="intro-copy"><p>Я умею отвечать «нормально».<br>Всё остальное получается хуже.</p><p>Здесь лежат вещи, которые я так и не отправила.<br>Если найдёшь себя между строк — это случайность.</p></div>
+    <span class="handwritten side-sentence" aria-hidden="true">это случайность.<br>это случайность.<br>это случайность.</span>
+  </section>
+  <section class="scraps" aria-label="Неотправленные записки">
+    <span class="scraps-label">НЕОТПРАВЛЕННОЕ <span>03</span></span>
+    <button class="note note-one" data-note="0" aria-haspopup="dialog"><span class="tape" aria-hidden="true"></span><span class="note-index">01 / 03:17</span><span class="note-preview handwritten">я снова не сплю.<br>стены тоже.</span><span class="note-bottom">развернуть <span>↗</span></span></button>
+    <figure class="photo"><img src="presence.png" alt="Пустая комната. В дальнем дверном проёме едва различим силуэт."><figcaption class="handwritten">я была здесь одна.</figcaption></figure>
+    <button class="note note-two" data-note="1" aria-haspopup="dialog"><span class="note-index">02 / без даты</span><span class="note-preview handwritten">если я молчу,<br>это не значит,<br>что здесь тихо.</span><span class="note-bottom">не читать <span>↗</span></span></button>
+    <button class="note note-three" data-note="2" aria-haspopup="dialog"><span class="note-index">03 / черновик</span><span class="note-preview">я написала<br><s>«мне нужна помощь»</s><br>«как дела?»</span><span class="note-bottom">не отправлено <span>↗</span></span></button>
+    <span class="scraps-annotation handwritten">не трогай.<br><span>впрочем, уже поздно.</span></span>
+  </section>
+  <section class="contact" aria-label="Контакты">
+    <div class="contact-heading"><span>ЕСЛИ ТЫ ВСЁ ЕЩЁ ЗДЕСЬ</span><p class="handwritten">оставь хоть что-нибудь.</p></div>
+    <a class="contact-link" href="https://t.me/Xartwellixa" target="_blank" rel="noopener noreferrer"><span class="contact-number">01</span><span class="contact-title">Telegram<span>@Xartwellixa</span></span><span class="contact-comment">напиши, что ты настоящий</span><span class="link-arrow" aria-hidden="true">↗</span></a>
+    <button class="contact-link" id="discord" aria-label="Скопировать Discord ID 836284250646249512"><span class="contact-number">02</span><span class="contact-title">Discord<span>836284250646249512</span></span><span class="contact-comment" id="copy-label">забери мой ID</span><span class="link-arrow" aria-hidden="true">⧉</span></button>
+    <div id="copy-fallback" hidden><label for="discord-value">Скопируй ID:</label><input id="discord-value" readonly value="836284250646249512"></div>
+  </section>
+  <div class="page-end"><span id="end-line">ничего не случилось.</span><span class="end-repeat" aria-hidden="true">ничего не случилось. ничего не случилось.</span><button class="end-cross secret-trigger" id="secret-trigger" aria-label="Открыть изнанку страницы" aria-haspopup="dialog" title="здесь что-то есть">×</button></div>
+</main>
+<footer><span class="audio-caption"><span class="audio-mark" aria-hidden="true">▥</span><span id="audio-caption">SAYO-NARA <span class="credit">/ SLOWED + REVERB</span></span></span><span class="footer-center" id="footer-message">не всё нужно было сохранять.</span><span id="clock">00:00</span></footer>
+</div>
+<dialog id="note-dialog" aria-labelledby="note-title"><div class="unfold-top"><span id="note-meta"></span><button id="close-note" aria-label="Свернуть записку">свернуть <span>×</span></button></div><article><h2 id="note-title"></h2><div id="note-content"></div><span class="note-signature handwritten">x.</span></article><div class="fold-shadow" aria-hidden="true"></div></dialog>
+<audio id="soundtrack" loop preload="auto" src="sayo-nara.mp3"></audio>
+<dialog id="underneath" class="underneath" aria-labelledby="underneath-title">
+  <div class="underneath-scene">
+    <div class="underneath-top"><span>XARTWELLIXA / ОБОРОТ ЛИСТА</span><button id="close-underneath" aria-label="Вернуться к основной странице">собрать обратно <span>×</span></button></div>
+    <div class="thought-wall" aria-hidden="true">я не писала это я не писала это я не писала это я не писала это я не писала это я не писала это я не писала это я не писала это</div>
+    <div class="underneath-body">
+      <span class="underneath-number">02 — ЭТОГО ЛИСТА НЕ БЫЛО</span>
+      <h2 id="underneath-title">я слышу<br><span>голоса</span><br><em>в голове.</em></h2>
+      <p class="underneath-aside handwritten">но в комнате<br>никого нет.</p>
+      <div class="underneath-medication" aria-hidden="true"><img src="scattered-tablets.png" alt="" draggable="false"></div>
+      <div class="underneath-copy"><p>Один считает секунды. Другой повторяет последнее слово.<br>Третий замолкает каждый раз, когда я пытаюсь его записать.</p><p class="handwritten">я узнаю свой почерк.<br>я не узнаю эти предложения.</p></div>
+      <div class="voice-fragments" aria-label="Обрывки мыслей">
+        <button class="voice-fragment" data-fragment="0"><span>01 / повтор</span><strong>я уже читала эту строку.</strong><small>коснись, чтобы перечитать</small></button>
+        <button class="voice-fragment" data-fragment="1"><span>02 / пропуск</span><strong>между 03:16 и 03:17 была ещё одна минута.</strong><small>коснись, чтобы вспомнить</small></button>
+        <button class="voice-fragment" data-fragment="2"><span>03 / чужое</span><strong>кто дописывает за мной?</strong><small>коснись, чтобы проверить</small></button>
+      </div>
+      <p class="underneath-last handwritten">я оставила белые поля. теперь и там кто-то пишет.</p>
+      <div class="underneath-bottom"><a href="https://t.me/Xartwellixa" target="_blank" rel="noopener noreferrer">напиши мне что-нибудь настоящее ↗</a><span>конец записи отсутствует</span></div>
+      <span class="sr-only" id="fragment-status" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+  <div class="paper-break" aria-hidden="true"><div class="paper-half paper-half-top"><span>ничего не случилось.</span></div><div class="paper-half paper-half-bottom"><span>ничего не случилось.</span></div><div class="paper-tear-line"></div></div>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><style>#entrance{display:none}#site{display:block}</style>Для записок и музыки включи JavaScript. Telegram: <a href="https://t.me/Xartwellixa">@Xartwellixa</a>. Discord: 836284250646249512.</noscript>
+</body></html>
